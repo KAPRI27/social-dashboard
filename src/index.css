@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    /* --lime-green: #29a745; */
+    /* --bright-red: #dc3545; */
+    /* --very-pale-blue: #f0f8ff; */
+    /* --facebook: #198ff5; */
+    /* --twitter: #1ca0f2; */
+    /* --youtube: #c4032a; */
+    /* --toggle: #aeb3cb; */
+    /* --very-dark-blue: #1e202a; */
+    /* --very-dark-blue-top: #1f212e; */
+    /* --dark-desaturated-blue: hsl(229, 27%, 20%); */
+    /* --desaturated-blue: #8b97c6; */
+    /* --white: #ffffff; */
+    /* --light-grayish-blue: #f0f2fa; */
+    /* --dark-grayish-blue: #63687e; */
+    /* --color-inicio: hsl(44, 93%, 50%); */
+    /* --color-fin:hsl(345, 96%, 45%); */
+}
