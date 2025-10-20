@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        
+
         white: 'hsl(0, 0%, 100%)',
         facebook: 'hsl(208, 92%, 53%)',
         twitter: 'hsl(203, 89%, 53%)',
@@ -23,9 +23,10 @@ export default {
         'desaturated-blue': 'hsl(228, 34%, 66%)',
         'light-grayish-blue': 'hsl(228, 50%, 96%)',
         'dark-grayish-blue': 'hsl(229, 12%, 44%)',
-        'color-instag-inicio': 'hsl(44, 93%, 50%)',
-        'color-instag-fin': 'hsl(345, 96%, 45%)',
-
+        instagInicio: 'hsl(44, 93%, 50%)',
+        instagFin: 'hsl(345, 96%, 45%)',
+        toggleInicio: 'hsl(180, 52%, 55%)',
+        toggleFin: 'hsl(123, 76%, 53%)',
       }
     },
   },

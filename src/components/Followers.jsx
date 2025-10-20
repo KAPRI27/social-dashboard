@@ -35,7 +35,9 @@ function Followers() {
                 </div>
             </div>
 
-            <div class="w-64 place-items-center  border-t-4 border-color-instag-inicio rounded-sm mx-5 p-5 bg-gray-100">
+           <div class="relative w-64 mx-5 p-5 rounded-sm bg-gray-100">
+               <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-t-sm"></div>
+
                 <div class="flex my-2">
                     <img class="px-2" src="./icon-instagram.svg" alt="icono de instagram" />
                     <p class="tracking-[0.3em] text-xs">@realnathanf</p>
