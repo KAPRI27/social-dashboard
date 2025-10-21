@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Inter';
+    src: url(./src/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf); 
+}
+
+
+
 :root{
     /* --lime-green: #29a745; */
     /* --bright-red: #dc3545; */
@@ -20,4 +27,15 @@
     /* --color-inicio: hsl(44, 93%, 50%); */
     /* --color-fin: hsl(345, 96%, 45%); */
     /* --toggle-inicio: hsl(123, 76%, 53%); */
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400, 700;
+    font-size: 14px;
+}
+
+@media screen {
+    
 }
