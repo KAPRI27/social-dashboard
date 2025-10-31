@@ -36,6 +36,10 @@ body{
     font-size: 14px;
 }
 
-@media screen {
+@media (min-width: 375px), (max-width: 1440px){
     
+    body{
+        min-width: 375px;
+        max-width: 1440px;
+    }
 }

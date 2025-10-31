@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default { 
+  darkMode: 'class',
   content: [
     "./index.html", 
     "./src/**/*.{js,ts,jsx,tsx}"
@@ -17,7 +18,7 @@ export default {
         'lime-green': 'hsl(163, 72%, 41%)',
         'bright-red': 'hsl(356, 69%, 56%)',
         'very-pale-blue': 'hsl(208, 100%, 97%)',
-        'very-dark-blue': 'hsl(230, 17%, 14%);',
+        'very-dark-blue': 'hsl(230, 17%, 14%)',
         'very-dark-blue-top': 'hsl(232, 19%, 15%)',
         'dark-desaturated-blue': 'hsl(229, 27%, 20%)',
         'desaturated-blue': 'hsl(228, 34%, 66%)',

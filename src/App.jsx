@@ -1,13 +1,13 @@
-// import { useState } from 'react'
+import  Header from "./components/Header"
+import  {OverviewContainer}  from "./components/OverviewContainer"
 
-// function App() {
-//   return (
-//     <>
-//      <h1 class="text-red-600 text-3xl">
-//         ESTE ES H1 DEL HTML
-//     </h1>
-//     </>
-//   )
-// }
+function App() {
+    return (
+        <>
+            <Header/>
+            <OverviewContainer/>
+        </>
+    )
+}
 
-// export default App
+export default App
