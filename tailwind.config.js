@@ -24,17 +24,26 @@ export default {
         'desaturated-blue': 'hsl(228, 34%, 66%)',
         'light-grayish-blue': 'hsl(228, 50%, 96%)',
         'dark-grayish-blue': 'hsl(229, 12%, 44%)',
-        instagInicio: 'hsl(37, 97%, 70%)',
-        instagFin: 'hsl(5, 77%, 71%)',
-        toggleInicio: 'hsl(180, 52%, 55%)',
-        toggleFin: 'hsl(123, 76%, 53%)',
+        toggleInicio: 'hsl(210,78%,56%)',
+        toggleFin: 'hsl(146, 68%, 55%)',
+        //  instagInicio: 'hsl(37, 97%, 70%)',
+        // instagFin: 'hsl(329, 70%, 58%)',
+
+      },
+
+      backgroundImage: {
+        'toggle-gradient': 'linear-gradient(to right, hsl(210,78%,56%), hsl(146, 68%, 55%))',
+        'instagram': 'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))'
       }, 
       fontFamily: {
         Inter : ['Inter'],
-      }
+      },
     },
   },
   plugins: [
     
   ],
 }
+
+////////*********ESTAMOS INTENTANDO CREAR EL COLORO GRADIENTE DE INSTA 
+// MIN 5:50:21TIEMPO VIDEO YOUTUBE*/

@@ -1,14 +1,23 @@
 
 import data from '../../data/data.json'
+import {OverviewCard} from './OverviewCard'
 
 console.log(data.overview)
 
 export const OverviewContainer = () => {
     return (
-        <section>
+        <section className='w-[326px] absolute top-[191px] left-0 right-0 mx-auto'>
             {
                 data.overview.map(object => 
-                    <div key={ object.id}>Tarjeta</div>
+                    <OverviewCard 
+                    key={object.id}
+                    user={object.user}
+                    audienceType={object.audienceType}
+                    audience={object.audience}
+                    network={object.network}
+                    isUp={object.isUp}
+                    today={object.today}
+                    />
                 )
         }
         </section>
