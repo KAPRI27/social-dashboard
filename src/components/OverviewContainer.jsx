@@ -5,6 +5,15 @@ import {OverviewCard} from './OverviewCard'
 console.log(data.overview)
 
 export const OverviewContainer = () => {
+
+    const convertNumberToK = (number) => {
+        if(number >= 10000){
+            number = number / 1000
+            return `${number}k`
+        }
+        return number
+    }
+
     return (
         <section className='w-[326px] absolute top-[191px] left-0 right-0 mx-auto'>
             {
@@ -13,7 +22,7 @@ export const OverviewContainer = () => {
                     key={object.id}
                     user={object.user}
                     audienceType={object.audienceType}
-                    audience={object.audience}
+                    audience={convertNumberToK(object.audience)}
                     network={object.network}
                     isUp={object.isUp}
                     today={object.today}

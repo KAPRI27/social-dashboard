@@ -44,6 +44,3 @@ export default {
     
   ],
 }
-
-////////*********ESTAMOS INTENTANDO CREAR EL COLORO GRADIENTE DE INSTA 
-// MIN 5:50:21TIEMPO VIDEO YOUTUBE*/
