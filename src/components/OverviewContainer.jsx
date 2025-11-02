@@ -1,22 +1,20 @@
 
 import data from '../../data/data.json'
-import {OverviewCard} from './OverviewCard'
+import {OverviewCard, OverviewTodayCard} from './OverviewCard'
 
-console.log(data.overview)
+const convertNumberToK = (number) => {
+    if(number >= 10000){
+        number = number / 1000
+        return `${number}k`
+    }
+    return number
+}
 
 export const OverviewContainer = () => {
-
-    const convertNumberToK = (number) => {
-        if(number >= 10000){
-            number = number / 1000
-            return `${number}k`
-        }
-        return number
-    }
-
     return (
-        <section className='w-[326px] absolute top-[191px] left-0 right-0 mx-auto'>
-            {
+        <section className='max-w-[1440px]'>
+            <div className='w-[326px]  flex flex-wrap top-[191px] left-0 right-0 mx-auto '>
+                {
                 data.overview.map(object => 
                     <OverviewCard 
                     key={object.id}
@@ -27,8 +25,31 @@ export const OverviewContainer = () => {
                     isUp={object.isUp}
                     today={object.today}
                     />
-                )
-        }
+                )   
+            }
+            </div>
+        </section>
+    )
+}
+
+export const OverviewTodayContainer = () => {
+    return (
+        <section className='max-w-[1440px]'>
+            <h2 className='text-2xl font-bold mb-[27px] text-dark-grayish-blue ml-8'>Overview Today</h2>
+            <div className='w-[326px]  top-[191px] left-0 right-0 mx-auto'>
+                {
+                    data['overview-today'].map( object => 
+                        <OverviewTodayCard
+                        key={object.id}
+                        network={object.network}
+                        statsType={object.statsType}
+                        stats={convertNumberToK(object.stats)}
+                        porcentage={object.porcentage}
+                        isUp={object.isUp}
+                        />
+                    )
+                }
+            </div>
         </section>
     )
 }

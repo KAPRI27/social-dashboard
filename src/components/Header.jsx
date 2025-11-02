@@ -17,11 +17,9 @@ function Header() {
   }, 
   [darkMode])
 
-
-
   return (
     <>
-        <header className=" bg-very-pale-blue dark:bg-very-dark-blue  h-[235px] rounded-b-[20px] pt-8 px-6 max-w-[1440px]">
+        <header className="bg-very-pale-blue dark:bg-very-dark-blue  h-[235px] rounded-b-[20px] pt-8 px-6 max-w-[1440px] -mb-[60px] ">
             <h1 className="text-very-dark-blue  dark:text-white text-2xl font-bold mb-1 ">Social Media Dashboard</h1>
             <p className="text-dark-grayish-blue dark:text-desaturated-blue font-bold mb-6">Total Followers: 23,004</p>
             <hr className="bg-black mb-[19px]"/>

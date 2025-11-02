@@ -19,12 +19,9 @@ const networkColors = {
     YouTube: 'bg-youtube'
 }
 
-
-
-
 export const OverviewCard = ({ user, audienceType, audience, network, isUp, today}) => {
     return (
-        <article className= "bg-light-grayish-blue w-full h-[216px] mt-4 rounded-[5px] overflow-hidden text-center dark:bg-dark-desaturated-blue hover:brightness-95 cursor-pointer hover:dark:brightness-125 ">
+        <article className= "bg-light-grayish-blue w-[326px] h-[216px] mt-4 rounded-[5px] overflow-hidden text-center dark:bg-dark-desaturated-blue hover:brightness-95 cursor-pointer hover:dark:brightness-125 ">
             <div className={`${networkColors[network]} h-[4px] mb-8`}></div>
             <div className="flex items-center place-content-center gap-2 ">
                 <img src={networkLogos[network]} alt={`logo ${network}`}/>
@@ -40,3 +37,22 @@ export const OverviewCard = ({ user, audienceType, audience, network, isUp, toda
         </article>
     )
 }
+
+export const OverviewTodayCard = ({ network, statsType, stats, porcentage, isUp}) => {
+    return (
+        <article className= "bg-light-grayish-blue w-[326px] h-[125px] mb-4 rounded-[5px] p-[27px] cursor-pointer hover:brightness-95 dark:bg-dark-desaturated-blue hover:dark:brightness-125">
+            <div className='flex justify-between items-center '>
+                <p className='text-dark-grayish-blue font-bold '>{statsType}</p>
+                <img src={networkLogos[network]} alt={`logo ${network}`}/>
+            </div>
+            <div className='flex justify-between'>
+                <p className=' font-bold text-[42px] text-very-dark-blue  dark:text-white'>{stats}</p>
+                <div className='flex items-center place-content-center'>
+                    <img src={isUp ? iconUp : iconDown} alt="icon arrow" />
+                    <p className={`text-xs font-bold ${isUp ? 'text-lime-green' : 'text-bright-red'}`} >{porcentage} %</p>
+                </div>
+            </div>
+        </article>
+    )
+}
+    
